@@ -1,0 +1,1054 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 4dfd3b35a8d3c6d4497e8450a5d9593c
+  m_SerializeEntries:
+  - m_GUID: 03250d2e63286e34f8c2aaf67a48af6a
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Scene/ScenePage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Scene
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04461a0f92ad4363b93e0ea23ab77723
+    m_Address: VNovelizerRes/Materials/S_UI_OldFilmMemory
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0561536b3f8c28442817d4d06d730066
+    m_Address: VNovelizerRes/VNPrefabs/UI/SaveLoad/Delete
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/SaveLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 066211fa5d284d90bd7b8f96613b9cc3
+    m_Address: VNovelizerRes/Materials/MainMenuBurnBoundary
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 076da992467a0f246afc8abb2f6fe413
+    m_Address: VNovelizerRes/Audio/SFX/Punch
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0950bd30f504bfb409bf9184989455ad
+    m_Address: VNovelizerRes/VNPrefabs/UI/History/HistoryItem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/History
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a8f8453203d4534a9da9ed8f5844491
+    m_Address: VNovelizerRes/Materials/S_MainMenuBurnParticle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f94ba89e6173ec4fae99bbf7c5fb880
+    m_Address: VNovelizerRes/GalleryContent/Music/MusicDataContainer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/GalleryContent
+    - VNovelizerRes/GalleryContent/Music
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1308097b2dc96784bbb79b93c0b637b8
+    m_Address: VNovelizerRes/VNPrefabs/Gameplay/VideoObj
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/Gameplay
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 154bf8ff3efcfce49b026d6716f09b3a
+    m_Address: VNovelizerRes/VNPrefabs/UI/Confirm/ConfirmPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Confirm
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16ade40123c74d149b05254a9a276e22
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Music/MusicPage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Music
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 179ff1833f54d0b4da7c63830d23c1d8
+    m_Address: "VNovelizerRes/Characters/\u6C5F\u79BB"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 191492ebea22ba742bcbcf35f7e5905c
+    m_Address: VNovelizerRes/VNPrefabs/UI/Settings/TabsButtons
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Settings
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c41667ddccd4ccfab39935216b7e6e8
+    m_Address: VNovelizerRes/VNPrefabs/UI/Monetization/StaminaRecoveryPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Monetization
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ce2355e107eb8e4ca59f49307ad0d30
+    m_Address: VNovelizerRes/VNPrefabs/UI/SaveLoad/SaveLoadPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/SaveLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d07b4e91ade4c7459e94a5d102afc09
+    m_Address: VNovelizerRes/Audio/SFX/Kata
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1db97863ab7f9674fbe0f49298eda543
+    m_Address: "VNovelizerRes/Backgrounds/\u673A\u5668\u4EBA\u8BFE\u7A0B_46"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Backgrounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f12c775c60b6134e9df393d308a2d7c
+    m_Address: "VNovelizerRes/CharactersPic/\u8D75\u82F1\u6770"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/CharactersPic
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2001fc3a7ae49094e957ee97aeeefe78
+    m_Address: VNovelizerRes/VNPrefabs/UI/VNGamePlay/VNGamePlayPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/VNGamePlay
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 232fd57bd1fae574485a3eb47402b937
+    m_Address: VNovelizerRes/Audio/SFX/RubbleCrash
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26adb4c929ce75f469447be696365b50
+    m_Address: VNovelizerRes/GalleryContent/CG/CGDataContainer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/GalleryContent
+    - VNovelizerRes/GalleryContent/CG
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 276030191f146a24f98d5f620fcef7c7
+    m_Address: VNovelizerRes/VNPrefabs/UI/Settings/DisplayPage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Settings
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 27de99a1edc84cde86f8c637c8a6e8be
+    m_Address: VNovelizerRes/VFX/MainMenuBurn/T_MainMenuBurnCharEdge
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/MainMenuBurn
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2cd8fefdae456af4b82ad9f51e5fd334
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/GalleryPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2de4fdeaf5de53e49b0d2d8c72f66b50
+    m_Address: VNovelizerRes/Audio/SFX/FireBurn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3152c4f3e4dc4ee6891ca7cb0dcbf76e
+    m_Address: VNovelizerRes/Materials/M_TVSnow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3226711497b629f419469e3bde5482ea
+    m_Address: "VNovelizerRes/Backgrounds/\u673A\u5668\u4EBA\u8BFE\u7A0B_28"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Backgrounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36dc76b3d9aae3545828feae16415ec1
+    m_Address: VNovelizerRes/Audio/SFX/RockBreak
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d4a04a38985e2f4d98203b3168d587f
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Scene/SceneSlot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Scene
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 409e1c0cf23045d8a65e29e1ad64ca15
+    m_Address: VNovelizerRes/Materials/S_UI_TVSnow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 453050476ff75584c987e8177fd5e119
+    m_Address: VNovelizerRes/VNPrefabs/UI/History/H_DialogueBox
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/History
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 46645c1810cf3184582a0ec0390e4d3a
+    m_Address: VNovelizerRes/Audio/SFX/Sizzle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49172aacde5b4bddac89101bacdd2bee
+    m_Address: VNovelizerRes/Materials/S_MainMenuBurnFlameRibbon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49304ef52ad16bd4d8df2fe6fc3f81e0
+    m_Address: VNovelizerRes/Audio/SFX/FootStep
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e60d4cdeb4e27f41aa9708ec621b488
+    m_Address: "VNovelizerRes/Backgrounds/\u673A\u5668\u4EBA\u8BFE\u7A0B_4"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Backgrounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f1d3e07836e4d528a7f4f9a261a26e6
+    m_Address: VNovelizerRes/VFX/PostProcess/MemoryOldFilmOverlay
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/PostProcess
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50b4ddb7f7c1f25458779f2d414c47ed
+    m_Address: VNovelizerRes/VNPrefabs/UI/VNGamePlay/Char_Left
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/VNGamePlay
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5562eafd7a20dae4685ffa0d14dab39f
+    m_Address: VNovelizerRes/Audio/SFX/GlassBreaking
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5593a2415734dcf43aa04bc8b852eccd
+    m_Address: VNovelizerRes/VNPrefabs/UI/SaveLoad/CloseButton
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/SaveLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55a53df80b43e704e94a9fd02d7c597f
+    m_Address: VNovelizerRes/Backgrounds/mainmenu_burned
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Backgrounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 574ac68236f17ad47a3641097a9189e9
+    m_Address: VNovelizerRes/VNPrefabs/UI/History/H_Close
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/History
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c05e7e57ed7a804081175216c2072e4
+    m_Address: VNovelizerRes/Audio/SFX/EarRinging
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cb9dc3f19e84be59d7b3771830395d6
+    m_Address: VNovelizerRes/Materials/M_OldFilmMemory
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5fb53831a6ba3994d897e6dc8d640d3e
+    m_Address: VNovelizerRes/Materials/M_Snow
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6058cc62bbd811647bef6654a86dbb21
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Music/MusicSlot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Music
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60594e18b174d2e46831c527b3fbc79d
+    m_Address: VNovelizerRes/VNPrefabs/UI/Settings/SettingsPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Settings
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6574357b4bb44083a668dd9fc131b51d
+    m_Address: VNovelizerRes/VNPrefabs/UI/ToBeContinued/ToBeContinuedPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/ToBeContinued
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6673d451c25f483439c7a4b980046c11
+    m_Address: VNovelizerRes/VNPrefabs/Gameplay/SoundObj
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/Gameplay
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6880be0408110ad46a50808071d116b2
+    m_Address: VNovelizerRes/Audio/SFX/MetallicThud
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 692cbe74a004b7647a7cdb52759451f6
+    m_Address: VNovelizerRes/Audio/SFX/Electric
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6dfa548d3fe73a54a8bc3336f8b858b0
+    m_Address: VNovelizerRes/VFX/Partical/RainEffect
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/Partical
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e48e681167c4234eba39dbcc0fc4ee4
+    m_Address: "VNovelizerRes/VNScripts/\u673A\u5668\u4EBA\u8BFE\u7A0B"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNScripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 719a51ce48ea1364fac64819ba579d36
+    m_Address: VNovelizerRes/VNPrefabs/UI/VNGamePlay/Char_Right
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/VNGamePlay
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 739ea54ff76a9124ab477dcc395d313b
+    m_Address: VNovelizerRes/VFX/MainMenuBurn/T_MainMenuBurnSmoke
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/MainMenuBurn
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75f07602718671049a3a1fd4585c0f8e
+    m_Address: VNovelizerRes/VNPrefabs/UI/VNGamePlayCanvas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 797eb640c0509de4abb8d63dcdf58ecb
+    m_Address: VNovelizerRes/VNPrefabs/UI/SaveLoad/SaveSlot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/SaveLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b5211d56ca478d4aa3c69e29179681b
+    m_Address: VNovelizerRes/Audio/SFX/WaterSplash
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ba43d49277849389dc30b9f0f086626
+    m_Address: VNovelizerRes/VNPrefabs/UI/EndingChoice/EndingChoicePanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/EndingChoice
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f6de267dbce9084fbd211b42722973d
+    m_Address: VNovelizerRes/VNPrefabs/UI/History/H_Content
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/History
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f7bb11d4ba34bc4b97f17d0a1f206c1
+    m_Address: VNovelizerRes/VFX/Partical/MemoryDustEffect
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/Partical
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83c151bba858fb74f910b5aa35b34856
+    m_Address: "VNovelizerRes/Characters/\u8D75\u82F1\u6770"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8989e540fa230b74696dcd1751dd841c
+    m_Address: VNovelizerRes/Audio/SFX/DoorClose
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a82cf080d9e76b4fbfa209b72d50215
+    m_Address: VNovelizerRes/VNPrefabs/UI/Settings/CloseBtn
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Settings
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e1e5b1b11754c76b1a02e57b4c2f001
+    m_Address: VNovelizerRes/Materials/S_UI_TapePlayback
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e1e5b1b11754c76b1a02e57b4c2f002
+    m_Address: VNovelizerRes/Materials/M_TapePlayback
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e1e5b1b11754c76b1a02e57b4c2f003
+    m_Address: VNovelizerRes/VFX/PostProcess/TapePlaybackOverlay
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/PostProcess
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94856c0ff92a41f4aa27f836edabefa4
+    m_Address: VNovelizerRes/VFX/Partical/SnowEffect
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/Partical
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94ce10b9cbad2a54da6764f00c30ab83
+    m_Address: "VNovelizerRes/Backgrounds/\u673A\u5668\u4EBA\u8BFE\u7A0B_2"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Backgrounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 972e9e0e7dbe40a40ba460c5fdfe5090
+    m_Address: "VNovelizerRes/CharactersPic/\u6C5F\u79BB"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/CharactersPic
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 991b8d2b9c3f9ad499068c8e6ebaebfb
+    m_Address: VNovelizerRes/VNPrefabs/UI/Choice/ChoicePanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Choice
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99bca371aeabe5c41b1b83815a88fd95
+    m_Address: VNovelizerRes/VFX/Animation/Sweat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/Animation
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c16bbb89a5297a4896cb48c550b9f66
+    m_Address: VNProjectConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c528a118f574836bc6ef9a6db63b7c7
+    m_Address: VNovelizerRes/VNPrefabs/UI/Monetization/StaminaHUD
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Monetization
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9cb4132853b5b264b80eb45b1d54cc73
+    m_Address: VNovelizerRes/VNPrefabs/UI/VNGamePlay/Prompt/PromptItem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/VNGamePlay
+    - VNovelizerRes/VNPrefabs/UI/VNGamePlay/Prompt
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0603f2b254b39a4584cc67aa26a77ba
+    m_Address: VNovelizerRes/VFX/Partical/FogEffect
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/Partical
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a22b4c08440f9b841b3aa0504346c075
+    m_Address: VNovelizerRes/VNPrefabs/UI/Settings/VolumePage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Settings
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a5e2edf5221656841971843235e4296b
+    m_Address: VNovelizerRes/VNPrefabs/UI/History/H_SpeakerBox
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/History
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a5fe1614a2c52f244a7580df9cc7ecf1
+    m_Address: "VNovelizerRes/Characters/\u8463\u6559\u6388"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Characters
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6ea8b42ca5c550499d74ddfbf3a0fc3
+    m_Address: VNovelizerRes/Audio/SFX/Skip
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7a602b092ab0c24faf11842f5937c2d
+    m_Address: VNovelizerRes/VNPrefabs/UI/TransitionManagerRoot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8fd8c40f71848b2ac75bbf9d5ef6a36
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Ending/EndingSlot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Ending
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a959ff13262fe5d4f80798de9ebb7963
+    m_Address: VNovelizerRes/Audio/SFX/Screech
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afb818cf15a59414e8843c360536a95d
+    m_Address: VNovelizerRes/VNPrefabs/UI/Pause/PausePanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Pause
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6a22f39989b47149a2877e15d613a53
+    m_Address: VNovelizerRes/VFX/PostProcess/MemoryFilterOverlay
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/PostProcess
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b73e8d06fb8448baab392f217dfdce51
+    m_Address: VNovelizerRes/Materials/S_UI_ElectronicScreenNoise
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7fff9fdfd6d9894c8371086497ccc3a
+    m_Address: VNovelizerRes/VNPrefabs/UI/History/HistoryGlassText SDF
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/History
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8b3ede17e7a0564bb36b9ee92bcf50c
+    m_Address: VNovelizerRes/VNPrefabs/UI/History/H_Replay
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/History
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b94ec0db6de84c429cf70cb2ad383a1f
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Ending/EndingPage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Ending
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b98b6f4c194a4899a14dd437e75f93e2
+    m_Address: VNovelizerRes/VFX/PostProcess/MemoryTVSnowOverlay
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/PostProcess
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba527902c0422b04d94124d4b5dcaa9f
+    m_Address: VNovelizerRes/Backgrounds/mainmenu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Backgrounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bff24fe8e15390a4d918ab2cf68020d0
+    m_Address: VNovelizerRes/VFX/Partical/SparkEffect
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/Partical
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c00a2e757d5dc9545a6cf7fb60b1d732
+    m_Address: VNovelizerRes/VNPrefabs/UI/Loading/LoadingProgressPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Loading
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c18073d6ca3f4b12a9cf93618cf40e6a
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Ending/EndingSlotContainer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Ending
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c26fe25a8d535cd4ba25fa0a4c912ff4
+    m_Address: VNovelizerRes/VNPrefabs/UI/Choice/ChoiceItem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Choice
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5441c9c3d834b24683591fae1e4731d
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Music/MusicList
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Music
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5f3e9a0e3aa5ff4d914384c7e2b4c8b
+    m_Address: VNovelizerRes/VNPrefabs/UI/History/H_Scroll View
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/History
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6cac0bffb9b452bb7ce7358a131d288
+    m_Address: VNovelizerRes/Materials/M_ElectronicScreenNoise
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6ffce649953f1c498f1355777522090
+    m_Address: VNovelizerRes/Materials/S_UI_MainMenuBurnMask
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c85826e9e39e02b4e8cfb243c307dc6c
+    m_Address: VNovelizerRes/VNPrefabs/UI/VNGamePlay/SpeakerBox
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/VNGamePlay
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc6c0a69ea724cc2a9c1e6854f2a5c0f
+    m_Address: VNovelizerRes/GalleryContent/Ending/EndingDataContainer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/GalleryContent
+    - VNovelizerRes/GalleryContent/Ending
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce51689a1ee92b44ab15a1d689f07eb8
+    m_Address: VNovelizerRes/VNPrefabs/UI/VNGamePlay/ButtonContainer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/VNGamePlay
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d3bfcde2b1bc4295a63f11e5e4865261
+    m_Address: VNovelizerRes/Materials/S_UI_MainMenuBurnReveal
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Materials
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d751928f59fa202419cf9a13027ef701
+    m_Address: VNovelizerRes/Audio/SFX/GearSpinning
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d959fb53075a03c448d2fe8531592422
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/CG/CGSlot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/CG
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd1e6623ab4df4c4398085eb176ec244
+    m_Address: VNovelizerRes/VNPrefabs/UI/Settings/TextPage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Settings
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0e18ebddf443954eaf6c92fc273e97a
+    m_Address: "VNovelizerRes/ExcelVNScripts/\u673A\u5668\u4EBA\u8BFE\u7A0B"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/ExcelVNScripts
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e34d79bbb4d643e479fb303ca11df049
+    m_Address: VNovelizerRes/Audio/SFX/GunShot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e56c60c4dbe898a4c891de21c08bdf56
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Scene/SceneSlotContainer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Scene
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e62c721f34ec67140acd4327a4182eca
+    m_Address: VNovelizerRes/VNPrefabs/UI/SaveLoad/ModeBox
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/SaveLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7d71018e7c49824683180c149ae790a
+    m_Address: VNovelizerRes/VNPrefabs/UI/VNGamePlay/DialougeBox
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/VNGamePlay
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee46f0fabcd9fb74bb03103a1ebc71d2
+    m_Address: VNovelizerRes/VNPrefabs/UI/History/HistoryPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/History
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f11909e4d84c12943b2c3acbaeeb5d4b
+    m_Address: VNovelizerRes/GalleryContent/Scene/SceneDataContainer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/GalleryContent
+    - VNovelizerRes/GalleryContent/Scene
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f404098ebfe369548a44afa7dee1c7be
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/CG/CGPage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/CG
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f43a5d38ca7e42d699e938a75fcd0a01
+    m_Address: VNovelizerRes/VFX/MainMenuBurn/T_MainMenuBurnFlameRibbon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/MainMenuBurn
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f533f269da3cf304eb71740fa8bc9e5f
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Music/RightPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Music
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6344708e03f7f2469bca16cb05c52b0
+    m_Address: VNovelizerRes/VNPrefabs/UI/EventSystem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6508d7dc4d810741aea823fc12524d7
+    m_Address: VNovelizerRes/VNPrefabs/UI/MainMenu/MainMenuPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/MainMenu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6b5dc97099937940bee9c97db7ea556
+    m_Address: VNovelizerRes/VFX/PostProcess/PostEffect_Pixel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VFX
+    - VNovelizerRes/VFX/PostProcess
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f779dfdc7d81e8744ae97e18818be17b
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Scene/SceneSlotDetail
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Scene
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f8341e7f5376da04db3e594ae9396631
+    m_Address: VNovelizerRes/VNPrefabs/UI/VNGamePlay/Char_Mid
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/VNGamePlay
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f912cbe726154dc9b66cb1f52d15927e
+    m_Address: VNovelizerRes/VNPrefabs/UI/Gallery/Ending/EndingSlotDetail
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/VNPrefabs
+    - VNovelizerRes/VNPrefabs/UI
+    - VNovelizerRes/VNPrefabs/UI/Gallery
+    - VNovelizerRes/VNPrefabs/UI/Gallery/Ending
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f93c02473695b77489b84cbe64fd9a20
+    m_Address: VNovelizerRes/Audio/SFX/FireIgnite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb42f99b0bebad244a20ba78466cdf27
+    m_Address: "VNovelizerRes/CharactersPic/\u8463\u79CB\u6960"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/CharactersPic
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fed074154ee9b314e95c270b9d9ca7f8
+    m_Address: VNovelizerRes/Audio/SFX/ElectricShock
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - VNovelizerRes
+    - VNovelizerRes/Audio
+    - VNovelizerRes/Audio/SFX
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e05a7e7d0a4767d4dbd8053c426fbfd0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c58a63bf50cbf874a8a4959887e29732, type: 2}
+    - {fileID: 11400000, guid: ae396c43cd856b24389542c96a66bc07, type: 2}

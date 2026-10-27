@@ -1,0 +1,255 @@
+// VNovelizer managed TapTap gallery audio bridge, loaded from minigame/game.js.
+"use strict";
+var sdk = require("./unity-sdk/audio/unity-audio");
+var store = require("./unity-sdk/audio/store");
+var prototype = sdk.AudioChannelInstance && sdk.AudioChannelInstance.prototype;
+var bridge = {
+  version: 6, verifySeek: null, pending: null, channel: null, binding: null, generation: 0, cleanup: null,
+  clearReady: function () { if (this.cleanup) this.cleanup(); this.cleanup = null; },
+  take: function (channel, method, asset) {
+    var request = this.pending;
+    if (!request) return null;
+    // Unity may resume the same channel using a refreshed native URL.
+    // A recreated voice must still match the retained clip identity.
+    if (this.binding && this.channel !== channel &&
+        (this.binding.method !== method || this.binding.asset !== asset)) {
+      if (!request.warnedCandidate) {
+        request.warnedCandidate = true;
+        console.log("[TapGalleryAudio] v6 waiting for gallery channel; candidate=" + method +
+          ", sameAsset=" + (this.binding.asset === asset));
+      }
+      return null;
+    }
+    if (Date.now() > request.deadline) {
+      this.pending = null;
+      console.warn("[TapGalleryAudio] v6 playback capture timed out");
+      return null;
+    }
+    request.rebound = !!this.channel && this.channel !== channel;
+    request.method = method;
+    request.asset = asset;
+    this.pending = null;
+    return request;
+  },
+  sourceRequest: function (channel, source, offset) {
+    if (this.channel !== channel || !source) return null;
+    var request = this.take(channel, source.mediaElement ? "playUrl" : "playBuffer",
+      source.mediaElement ? source.url : source.buffer);
+    if (request) request.sdkOffset = offset;
+    return request;
+  },
+  readSource: function (source) {
+    if (!source) return -1;
+    var time;
+    if (source.mediaElement) time = Number(source.mediaElement.currentTime);
+    else if (source.isPausedMockNode) time = Number(source.playbackPausedAtPosition);
+    else {
+      var context = store.WEBAudio && store.WEBAudio.audioContext;
+      if (!context) return -1;
+      var rate = Number(source.playbackRateValue);
+      if (!isFinite(rate) || rate <= 0) rate = 1;
+      time = (context.currentTime - source.playbackStartTime) * rate;
+      if (source.loop) {
+        var start = Number(source.loopStart) || 0;
+        var end = Number(source.loopEnd);
+        if (!(end > start)) end = source.buffer && Number(source.buffer.duration);
+        if (end > start && time >= start) time = (time - start) % (end - start) + start;
+      }
+      if (time < 0) time = 0;
+    }
+    return isFinite(time) && time >= 0 ? time : -1;
+  },
+  bindClock: function (channel) {
+    var source = channel && channel.source, self = this;
+    if (!source) return;
+    source.estimatePlaybackPosition = function () { return self.readSource(source); };
+    // Resume and delayed native starts do not necessarily call playUrl again.
+    if (source.mediaElement && !source.vnGalleryStartWrapped) {
+      source.vnGalleryStartWrapped = true;
+      ["start", "_startPlayback"].forEach(function (name) {
+        var original = source[name];
+        if (typeof original !== "function") return;
+        var offsetIndex = name === "start" ? 1 : 0;
+        source[name] = function () {
+          var args = Array.prototype.slice.call(arguments);
+          var request = self.sourceRequest(channel, source, args[offsetIndex]);
+          if (request) {
+            args[offsetIndex] = request.time;
+            try { source.mediaElement.startTime = request.time; } catch (e) {}
+            console.log("[TapGalleryAudio] v6 " + name + " target=" + request.time);
+          }
+          var result = original.apply(this, args);
+          if (request) self.capture(channel, request);
+          return result;
+        };
+      });
+    }
+  },
+  capture: function (channel, request) {
+    if (request.generation !== this.generation) return;
+    this.clearReady();
+    this.channel = channel;
+    var source = channel.source, self = this;
+    if (!source) return;
+    this.binding = { method: request.method, asset: request.asset };
+    this.bindClock(channel);
+    var audio = source.mediaElement;
+    console.log("[TapGalleryAudio] v6 captured " + (audio ? "InnerAudio" : "WebAudio") +
+      ", requested=" + request.time + ", sdkOffset=" + request.sdkOffset + ", channelChanged=" + request.rebound);
+    if (!audio) return;
+    try { audio.startTime = request.time; } catch (e) {}
+    if (!(request.time > 0)) return;
+    var readyApplied = false, playApplied = false;
+    var active = function () {
+      return self.channel === channel && channel.source === source && request.generation === self.generation;
+    };
+    var apply = function (cause) {
+      if (!active()) return;
+      try {
+        if (typeof audio.seek === "function") audio.seek(request.time);
+        else audio.currentTime = request.time;
+        console.log("[TapGalleryAudio] v6 native seek=" + request.time + ", event=" + cause +
+          ", actual=" + Number(audio.currentTime));
+      } catch (e) { console.warn("[TapGalleryAudio] v6 seek failed: " + (e.errMsg || e.message || String(e))); }
+    };
+    var seekReady = function () {
+      if (readyApplied || !active()) return;
+      readyApplied = true;
+      if (typeof audio.offCanplay === "function") audio.offCanplay(seekReady);
+      apply("canplay");
+    };
+    var seekPlaying = function () {
+      if (playApplied || !active()) return;
+      playApplied = true;
+      // Some adapters reset currentTime on play after the canplay seek.
+      apply("play");
+      self.clearReady();
+    };
+    if (typeof audio.onCanplay === "function") audio.onCanplay(seekReady);
+    if (typeof audio.onPlay === "function") audio.onPlay(seekPlaying);
+    this.cleanup = function () {
+      if (typeof audio.offCanplay === "function") audio.offCanplay(seekReady);
+      if (typeof audio.offPlay === "function") audio.offPlay(seekPlaying);
+    };
+    if (source.readyToPlay || Number(audio.buffered) > request.time) seekReady();
+    // Native events can fire before capture, or never reach these listeners.
+    // Verify the real clock from the UI's position polls; never fabricate progress.
+    var capturedAt = Date.now(), nextAttempt = capturedAt + 100;
+    this.verifySeek = function () {
+      if (!active()) {
+        // Unity may replace the native source again after Play consumes pending.
+        // Transfer only an unfinished seek on the same channel and exact clip URL.
+        var replacement = channel.source;
+        if (self.channel === channel && request.generation === self.generation &&
+            Date.now() < request.deadline && replacement && replacement !== source &&
+            replacement.mediaElement && request.method === "playUrl" &&
+            replacement.url === request.asset) {
+          console.log("[TapGalleryAudio] v6 source replaced; rebinding target=" + request.time);
+          self.capture(channel, request);
+          return;
+        }
+        self.verifySeek = null;
+        self.clearReady();
+        return;
+      }
+      var now = Date.now(), actual = self.readSource(source);
+      var elapsed = Math.max(0, (now - capturedAt) / 1000);
+      var duration = Number(audio.duration);
+      var delta = actual - request.time;
+      if (audio.loop && duration > 0 && delta < -0.1) delta += duration;
+      if (actual >= 0 && delta >= -0.1 && delta <= elapsed + 0.5) {
+        self.verifySeek = null;
+        self.clearReady();
+        console.log("[TapGalleryAudio] v6 native seek confirmed target=" + request.time + ", actual=" + actual);
+        return;
+      }
+      if (now >= request.deadline) {
+        self.verifySeek = null;
+        self.clearReady();
+        console.warn("[TapGalleryAudio] v6 native seek timed out target=" + request.time + ", actual=" + actual);
+        return;
+      }
+      if (now >= nextAttempt) {
+        nextAttempt = now + 200;
+        apply("position-check");
+      }
+    };
+  },
+  begin: function (time) {
+    this.generation++;
+    this.verifySeek = null;
+    this.clearReady();
+    this.pending = null;
+    if (!isFinite(time) || time < 0 || !this.installed) return 0;
+    this.pending = { time: time, generation: this.generation, deadline: Date.now() + 5000 };
+    console.log("[TapGalleryAudio] v6 begin target=" + time + ", bound=" + !!this.channel +
+      ", source=" + !!(this.channel && this.channel.source));
+    return 1;
+  },
+  end: function () {
+    // Keep the request until the actual Play, Resume or native start consumes it.
+  },
+  position: function () {
+    if (this.verifySeek) this.verifySeek();
+    if (this.pending && Date.now() > this.pending.deadline) {
+      this.pending = null;
+      console.warn("[TapGalleryAudio] v6 playback capture timed out");
+    }
+    return this.readSource(this.channel && this.channel.source);
+  },
+  reset: function () {
+    this.generation++;
+    this.verifySeek = null;
+    this.pending = null;
+    this.channel = null;
+    this.binding = null;
+    this.clearReady();
+  },
+  installed: false
+};
+if (prototype && typeof prototype.playUrl === "function" && typeof prototype.playBuffer === "function") {
+  ["playUrl", "playBuffer"].forEach(function (name) {
+    var original = prototype[name];
+    prototype[name] = function () {
+      var args = Array.prototype.slice.call(arguments), request = bridge.take(this, name, args[1]);
+      if (request) {
+        request.sdkOffset = args[2];
+        args[2] = request.time;
+      }
+      var result = original.apply(this, args);
+      if (request) bridge.capture(this, request);
+      else if (bridge.channel === this) bridge.bindClock(this);
+      return result;
+    };
+  });
+  var setup = prototype.setup;
+  prototype.setup = function () {
+    var result = setup.apply(this, arguments);
+    if (bridge.channel === this) bridge.bindClock(this);
+    return result;
+  };
+  var resume = prototype.resume;
+  if (typeof resume === "function") prototype.resume = function () {
+    var source = this.source;
+    var request = bridge.sourceRequest(this, source, this.deleyOffset);
+    if (bridge.channel === this && source) {
+      if (source.mediaElement) {
+        var position = request ? request.time : bridge.readSource(source);
+        if (position >= 0) {
+          this.deleyTime = 0;
+          this.deleyOffset = position;
+          try { source.mediaElement.startTime = position; } catch (e) {}
+        }
+      } else if (request && source.isPausedMockNode) source.playbackPausedAtPosition = request.time;
+    }
+    if (request) console.log("[TapGalleryAudio] v6 resume target=" + request.time);
+    var result = resume.apply(this, arguments);
+    if (request) bridge.capture(this, request);
+    else if (bridge.channel === this) bridge.bindClock(this);
+    return result;
+  };
+  bridge.installed = true;
+  console.log("[TapGalleryAudio] v6 runtime installed");
+} else console.warn("[TapGalleryAudio] v6 SDK playback methods are unavailable");
+GameGlobal.VNovelizerTapGalleryAudio = bridge;
+module.exports = bridge;

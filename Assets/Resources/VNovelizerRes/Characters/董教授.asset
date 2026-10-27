@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5505eadd43ebc114b9e9be075c8cb3a1, type: 3}
+  m_Name: "\u8463\u6559\u6388"
+  m_EditorClassIdentifier: 
+  CharacterID: "\u8463\u6559\u6388"
+  ElementSprites:
+  - Element: 0
+    Sprite: {fileID: 21300000, guid: fb42f99b0bebad244a20ba78466cdf27, type: 3}
+    SpritePath: "VNovelizerRes/CharactersPic/\u8463\u79CB\u6960"
+  HeadSprites: []
+  SpeakerBox: {fileID: 0}
+  HeadFrame: {fileID: 0}
+  scale: 1
+  offset: {x: -50, y: -250}

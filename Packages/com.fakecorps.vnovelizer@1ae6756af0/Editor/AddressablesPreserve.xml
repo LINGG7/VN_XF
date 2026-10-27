@@ -1,0 +1,5 @@
+<linker>
+  <!-- ResourceManager allocates operations through reflection. Preserve constructors
+       for ChainOperation, CompletedOperation and the other dynamically created operations. -->
+  <assembly fullname="Unity.ResourceManager" preserve="all" />
+</linker>
